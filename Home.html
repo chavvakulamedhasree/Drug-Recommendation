@@ -1,0 +1,72 @@
+HOME.html:
+<!DOCTYPE html>
+<html>
+<head>
+ <title>Review of the given Drug</title>
+ <style>
+ body {
+ font-family: Arial, sans-serif;
+ margin: 0;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ height: 100vh;
+ background: url("homepage.jpg") no-repeat center center fixed;
+ background-size: cover;
+ }
+ h1 {
+ color: #333;
+ text-align: center;
+ }
+ form {
+ text-align: center;
+ }
+ label {
+ display: block;
+ margin-bottom: 10px;
+color: #333;
+ font-size: 45px;
+ text-align: center;
+ }
+ input[type="text"] {
+ width: 300px;
+ padding: 5px;
+ font-size: 16px;
+ }
+ .submit-btn {
+ width: 25%;
+ padding: 12px;
+ background-color: #4CAF50;
+ color: white;
+ border: none;
+ font-size: 16px;
+ border-radius: 4px;
+ cursor: pointer;
+ }
+ .submit-btn:hover {
+ background-color: #45a049;
+ }
+ </style>
+</head>
+<body>
+ <div class="container">
+ <h1>Review Of The Given Drug</h1>
+ <form action="/predict" method="post">
+ <h2> <label for="drugName">Enter the name of the Drug:</label><br></h3>
+ <input type="text" id="drugName" name="drugName" 
+placeholder="drugName"><br><br>
+<button onclick="search()" target="_self" class="submit-btn">Submit</button>
+ </form>
+ </div>
+</body>
+<script>
+function search(){
+ var drugName = document.getElementById("drugName").value; 
+ if (drugName=="drugname") {
+ window.open("result1.html");
+ } else {
+ window.open("error2.html");
+ }
+}
+</script>
+</html>
