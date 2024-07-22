@@ -1,0 +1,85 @@
+LOGIN.html:
+<!DOCTYPE html>
+<html>
+<head>
+ <title>Login</title>
+ <style>
+ body {
+ font-family: Arial, sans-serif;
+ margin: 0;
+ padding: 0;
+ background-image: url("C:\Users\akhil\Downloads\homepage.jpg");
+ background-size: cover;
+ background-position: center;
+ background-repeat: no-repeat;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ height: 100vh;
+ background: url("homepage.jpg") no-repeat center center fixed;
+ background-size: cover;
+ }
+ .container {
+ background-color: rgba(255, 255, 255, 0.8);
+ border-radius: 5px;
+ padding: 40px;
+ box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+ text-align: center;
+ max-width: 400px;
+ }
+Dept. of CSE (Data Science) 20
+ .login-title {
+ color: #333;
+ font-size: 32px;
+ margin-bottom: 20px;
+ }
+ .input-field {
+ width: 100%;
+ padding: 12px;
+ margin-bottom: 20px;
+ font-size: 16px;
+ border: 1px solid #ccc;
+ border-radius: 4px;
+ box-sizing: border-box;
+ }
+ .submit-btn {
+ width: 100%;
+ padding: 12px;
+ background-color: #4CAF50;
+ color: white;
+ border: none;
+ font-size: 16px;
+ border-radius: 4px;
+ cursor: pointer;
+ }
+ .submit-btn:hover {
+ background-color: #45a049;
+ }
+ </style>
+</head>
+<body>
+ <div class="container">
+ <h2 class="login-title">Drugs On Bugs</h2>
+ <form>
+ <input type="text" id="username" name="username" placeholder="Username" 
+class="input-field"><br>
+ <input type="password" id="password" name="password" placeholder="Password" 
+class="input-field"><br>
+<button 
+onclick="login()" target="_self" class="submit-btn">Login</button>
+ </form>
+Dept. of CSE (Data Science) 21
+ </div>
+</body>
+<script>
+function login() {
+ var username = document.getElementById("username").value;
+ var password = document.getElementById("password").value;
+ if (username == "a" && password == "1") {
+ window.open("home1.html");
+ } else {
+ alert("Invalid username or password");
+ }
+}
+</script> 
+</html>
